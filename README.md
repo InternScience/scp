@@ -78,7 +78,7 @@ SCP adopts a **Hub-Spoke architecture**:
 
 ## 🚀 Getting Started
 
-### 1. Installation and Deployment
+### Installation and Deployment
 
 ```bash
 # Clone the repository
@@ -91,22 +91,6 @@ docker-compose up hub
 # Start an example SCP Server
 docker-compose up server-example
 ```
-
-### 2. Register Tools
-
-```bash
-from scp_sdk import ToolRegistry
-
-tool = ToolRegistry.register(
-    name="predict_protein_function",
-    description="Predict protein function from sequence",
-    endpoint="http://localhost:8000/predict"
-)
-```
-
-### 3. Submit Experiment Requests
-
-Submit natural language or structured experiment objectives through SCP Client, and SCP Hub will automatically generate executable workflows.
 
 ## 🛠️ Tool Ecosystem
 
