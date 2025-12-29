@@ -27,13 +27,17 @@
 - [🔬 SCP vs MCP](#-scp-vs-mcp)
 - [🌐 Related Links](#-related-links)
 - [📄 License](#-license)
-- [🙏 Acknowledgments](#-acknowledgments)
+- [Acknowledgments](#acknowledgments)
 
 ---
 
 ## Overview
 
 SCP (Scientific Intelligence Context Protocol) is an **open-source standard protocol** designed to accelerate scientific discovery by building a **global web of autonomous scientific agents** that connects heterogeneous resources such as software tools, models, datasets, workflow engines, and experimental instruments.
+
+<p align="center">
+  <img src="images/overview.png" alt="SCP overview" width="850">
+</p>
 
 SCP provides:
 
@@ -59,6 +63,10 @@ SCP provides:
 
 ## 🏗️ Architecture Overview
 
+<p align="center">
+  <img src="images/architecture.png" alt="SCP Architecture Overview" width="850">
+</p>
+
 SCP adopts a **Hub-Spoke architecture**:
 
     SCP Client (User/Application)
@@ -83,11 +91,20 @@ SCP adopts a **Hub-Spoke architecture**:
 git clone https://github.com/InternScience/scp.git
 cd scp
 
-# Start SCP Hub
-docker-compose up hub
+# install 
+pip install mcp
 
-# Start an example SCP Server
-docker-compose up server-example
+# How to use
+
+There are two ways to use SCP in your workflow:
+
+## Option 1: Build & Manage Your Own
+You can set up your own SCP Server and Hub using the provided code. This gives you full control over your deployment and management.
+
+## Option 2: Use Intern-Discovery Platform (Recommended)
+Visit the **[SCP Square](https://discovery.intern-ai.org.cn/org/ailab/workspace/iframe?url=https://scphub.intern-ai.org.cn/)** on our **[Intern-Discovery platform](https://discovery.intern-ai.org.cn/org/ailab/workspace/chat)**. We host a ready-to-use SCP Hub with a public registration interface. You can submit your own SCP Server to the square, and it will be integrated into the managed Hub, making it discoverable and accessible across the Intern-Discovery ecosystem.
+
+Choose the approach that best fits your needs—whether you prefer full independence or a collaborative, managed environment.
 ```
 
 
@@ -102,7 +119,7 @@ SCP has integrated **1,600+ tools**, covering:
 - **Mathematics** (8.0%)
 - **Information Science and Computing Technology** (4.6%)
 
-🔗 **[View Complete Tool List]()**
+🔗 **[View Complete Tool List](https://yankai96.github.io/SCP_Tool_List/)**
 
 ## 📊 Use Cases
 
@@ -113,7 +130,7 @@ SCP has integrated **1,600+ tools**, covering:
 | AI-Driven Molecular Screening | Integrate QED scoring, ADMET prediction, and molecular docking |
 | Dry-Wet Integrated Protein Engineering | Closed-loop workflow from sequence design to experimental validation |
 
-For detailed case descriptions, refer to the [Technical Report]() or [SCP Documentation]().
+For detailed case descriptions, refer to the [Technical Report]() or [User Cases](https://github.com/InternScience/scp/tree/main/UserCases).
 
 ## 🔬 SCP vs MCP
 
@@ -126,16 +143,15 @@ For detailed case descriptions, refer to the [Technical Report]() or [SCP Docume
 
 ## 🌐 Related Links
 
-- **SCP Tool Plaza**: [Explore 1,600+ integrated tools]()
-- **SCP Documentation**: [Detailed usage guide and API documentation]()
+- **SCP Tool Plaza**: [Explore 1,600+ integrated tools](https://yankai96.github.io/SCP_Tool_List/)
+- **Chinese SCP Documentation**: [Detailed usage guide](https://github.com/InternScience/scp/blob/main/SCP%E4%B8%AD%E6%96%87%E6%89%8B%E5%86%8C.md)
 - **Paper & Technical Report**: [SCP design and experimental details]()
-- **Community Discussions**: [Questions and discussions]()
-- **Demo Video**: [SCP workflow demonstration]()
+- **Community Discussions**: [Questions and discussions](https://www.shlab.org.cn/news/5444176)
 
 ## 📄 License
 This project is open source under the Apache License 2.0.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 SCP is developed by Shanghai Artificial Intelligence Laboratory with support from the open-source community.
 
 If you use SCP, please cite our technical report:
