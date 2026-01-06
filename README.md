@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>SCP: Scientific Intelligence Context Protocol</h1>
+  <h1>SCP: Scientific Context Protocol</h1>
 </div>
 
 > **An open protocol layer for connecting and orchestrating heterogeneous scientific resources, building a global collaborative web of autonomous scientific Agents**
@@ -33,7 +33,7 @@
 
 ## Overview
 
-SCP (Scientific Intelligence Context Protocol) is an **open-source standard protocol** designed to accelerate scientific discovery by building a **global web of autonomous scientific agents** that connects heterogeneous resources such as software tools, models, datasets, workflow engines, and experimental instruments.
+SCP (Scientific Context Protocol) is an **open-source standard protocol** designed to accelerate scientific discovery by building a **global web of autonomous scientific agents** that connects heterogeneous resources such as software tools, models, datasets, workflow engines, and experimental instruments.
 
 <p align="center">
   <img src="images/overview.png" alt="SCP overview" width="850">
