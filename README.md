@@ -7,7 +7,7 @@
 <div align="center">
 
 [![Official Site](https://img.shields.io/badge/Official%20Site-333399.svg?logo=homepage)](https://discovery.intern-ai.org.cn/org/ailab/workspace/iframe?url=https://scphub.intern-ai.org.cn/)&#160;
-<a href="https://arxiv.org/pdf" target="_blank"><img src="https://img.shields.io/badge/arXiv-b5212f.svg?logo=arxiv" height="21px"></a>
+<a href="https://arxiv.org/abs/2512.24189" target="_blank"><img src="https://img.shields.io/badge/arXiv-b5212f.svg?logo=arxiv" height="21px"></a>
 [![Tool List](https://img.shields.io/badge/tools-1600%2B-brightgreen)](https://yankai96.github.io/SCP_Tool_List/)&#160;
 [![GitHub](https://img.shields.io/badge/GitHub-000000?logo=github&logoColor=white)](https://github.com/InternScience/scp)&#160;
 </div>
