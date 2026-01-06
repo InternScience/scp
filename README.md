@@ -130,7 +130,7 @@ SCP has integrated **1,600+ tools**, covering:
 | AI-Driven Molecular Screening | Integrate QED scoring, ADMET prediction, and molecular docking |
 | Dry-Wet Integrated Protein Engineering | Closed-loop workflow from sequence design to experimental validation |
 
-For detailed case descriptions, refer to the [Technical Report]() or [User Cases](https://github.com/InternScience/scp/tree/main/UserCases).
+For detailed case descriptions, refer to the [Technical Report](https://arxiv.org/abs/2512.24189) or [User Cases](https://github.com/InternScience/scp/tree/main/UserCases).
 
 ## 🔬 SCP vs MCP
 
@@ -158,8 +158,8 @@ If you use SCP, please cite our technical report:
 ```bibtex
 @article{jiang2025scp,
   title={SCP: Accelerating Discovery with a Global Web of Autonomous Scientific Agents},
-  author={Jiang, Yankai and Lu, Jiaxuan and Liu, Feng and Tan, Cheng and Lou, Wenjie and Sun, Haoran and Wei, Wangxu and Zhang, Bo and Wang, Lilong and Pan, Yaning and Tan, Pan and Wang, Xiaosong and Tang, Zhenyu and Gu, Shuang and Zhou, Dongzhan and Zhou, Bowen and Feng, Shiyang and Su, Haoyang and Ling, Fenghua and Bai, Lei},
-  journal={arXiv preprint},
+  author={Jiang, Yankai and Lou, Wenjie and Wang, Lilong and Tang, Zhenyu and Feng, Shiyang and Lu, Jiaxuan and Sun, Haoran and Pan, Yaning and Gu, Shuang and Su, Haoyang and others},
+  journal={arXiv preprint arXiv:2512.24189},
   year={2025}
 }
 ```
