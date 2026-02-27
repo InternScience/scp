@@ -286,6 +286,7 @@ All **206 skills** are organized into **8 major scientific domains**:
 | Resource | Link |
 |----------|------|
 | 🛠️ **SCP Tool Square** | [Explore 2,200+ integrated tools](https://yankai96.github.io/SCP_Tool_List/) |
+| 🚀 **SCP Skills Tutorial** | [Docker setup, model switching & skills usage guide](tutorial.md) |
 | 📖 **Documentation (Chinese)** | [Detailed user guide](https://github.com/InternScience/scp/blob/main/SCP中文手册.md) |
 | 📄 **Technical Report** | [SCP design and experiment details](https://arxiv.org/abs/2512.24189) |
 | 💬 **Community** | [Discussions and Q&A](https://www.shlab.org.cn/news/5444176) |
