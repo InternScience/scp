@@ -7,16 +7,40 @@
 
 ## Table of Contents
 
+- [Table of Contents](#table-of-contents)
 - [Prerequisites](#prerequisites)
-- [Step 1: Build the Docker Image](#step-1-build-the-docker-image)
+- [Step 1: Get the Docker Image](#step-1-get-the-docker-image)
+  - [Option A: Pull the Pre-Built Image (Recommended)](#option-a-pull-the-pre-built-image-recommended)
+  - [Option B: Build from Source](#option-b-build-from-source)
+    - [1.1 Clone the Repository](#11-clone-the-repository)
+    - [1.2 Build the Image](#12-build-the-image)
+    - [1.3 Verify the Image](#13-verify-the-image)
 - [Step 2: Run the Container](#step-2-run-the-container)
+  - [2.1 Start the Container](#21-start-the-container)
+  - [2.2 Using Docker Compose (Recommended)](#22-using-docker-compose-recommended)
 - [Step 3: Configure cc-switch](#step-3-configure-cc-switch)
+  - [3.1 Verify Installation](#31-verify-installation)
+  - [3.2 View Help](#32-view-help)
+  - [3.3 Add Model Providers (Interactive)](#33-add-model-providers-interactive)
+    - [Adding an International Model (e.g., Anthropic Claude)](#adding-an-international-model-eg-anthropic-claude)
+    - [Adding a Chinese Model (e.g., Alibaba Qwen)](#adding-a-chinese-model-eg-alibaba-qwen)
+  - [3.4 Manage Provider Configurations](#34-manage-provider-configurations)
 - [Step 4: Launch Claude Code](#step-4-launch-claude-code)
+  - [4.1 Start Claude Code](#41-start-claude-code)
+  - [4.2 Using Claude Code](#42-using-claude-code)
+  - [4.3 Switch Models and Restart](#43-switch-models-and-restart)
 - [Step 5: Using SCP Scientific Skills](#step-5-using-scp-scientific-skills)
   - [What Are SCP Skills?](#what-are-scp-skills)
   - [Install Skills into Claude Code](#install-skills-into-claude-code)
+    - [Option A: Clone the Full Repository](#option-a-clone-the-full-repository)
+    - [Option B: Copy Specific Skills](#option-b-copy-specific-skills)
+    - [Option C: Point Claude Code to the Skills Directory](#option-c-point-claude-code-to-the-skills-directory)
   - [Browse Available Skills](#browse-available-skills)
   - [Using a Skill — Step by Step](#using-a-skill--step-by-step)
+    - [Example 1: Drug Target Identification](#example-1-drug-target-identification)
+    - [Example 2: Protein Structure Analysis](#example-2-protein-structure-analysis)
+    - [Example 3: Variant Pathogenicity Assessment](#example-3-variant-pathogenicity-assessment)
+    - [Example 4: Chemical Structure Comparison](#example-4-chemical-structure-comparison)
   - [Skill Examples by Domain](#skill-examples-by-domain)
   - [Running Skills Manually (Without Claude Code)](#running-skills-manually-without-claude-code)
   - [Authentication Setup](#authentication-setup)
@@ -35,16 +59,28 @@ Before you begin, make sure your system has the following installed:
 
 ---
 
-## Step 1: Build the Docker Image
+## Step 1: Get the Docker Image
 
-### 1.1 Clone the Repository
+### Option A: Pull the Pre-Built Image (Recommended)
+
+Pull the official pre-built image directly from Docker Hub — no build step required:
+
+```bash
+docker pull interndiscoveryscp/scp-code:v2
+```
+
+After pulling, you can use `interndiscoveryscp/scp-code:v2` as the image name in all subsequent commands (replacing `claude-code:latest`).
+
+### Option B: Build from Source
+
+#### 1.1 Clone the Repository
 
 ```bash
 git clone https://github.com/InternScience/scp.git
 cd scp/docker
 ```
 
-### 1.2 Build the Image
+#### 1.2 Build the Image
 
 Run the following command in the project root directory:
 
@@ -57,7 +93,7 @@ docker build -t claude-code:latest -f .devcontainer/Dockerfile .
 - `-f .devcontainer/Dockerfile` — specifies the Dockerfile path
 - Estimated build time: **5–10 minutes** (depending on network speed)
 
-### 1.3 Verify the Image
+#### 1.3 Verify the Image
 
 ```bash
 docker images | grep claude-code
@@ -643,4 +679,3 @@ git pull origin main
     <a href="https://scp.intern-ai.org.cn">SCP Platform</a>
   </p>
 </div>
-
