@@ -153,7 +153,7 @@ SCP has integrated **2,200+ scientific tools** spanning multiple disciplines:
 
 ## 🎓 Scientific Skills
 
-> Building upon tool standardization, SCP further introduces the concept of **"Scientific Skills (SCP Skills)"** — the first batch of **206 scientific skills** is now available in the [`skills/`](skills/) directory, with **130 skills tested and verified against live SCP endpoints**.
+> Building upon tool standardization, SCP further introduces the concept of **"Scientific Skills (SCP Skills)"** — the first batch of **206 scientific skills** is now available in the [`skills/`](skills/) directory.
 
 ### What Are Scientific Skills?
 
