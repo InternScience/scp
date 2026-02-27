@@ -17,7 +17,7 @@
       <img src="https://img.shields.io/badge/⭐%20GitHub-000000?style=for-the-badge&logo=github" alt="GitHub">
     </a>
     <a href="https://github.com/InternScience/scp/tree/main/skills">
-      <img src="https://img.shields.io/badge/🎓%20Skills-206%2B-brightorange?style=for-the-badge" alt="Skills">
+      <img src="https://img.shields.io/badge/🎓%20Skills-206%2B-orange?style=for-the-badge" alt="Skills">
     </a>
   </p>
 
