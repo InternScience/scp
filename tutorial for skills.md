@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>SCP + Claude Code Tutorial</h1>
+  <h1>SCP Skills Tutorial</h1>
   <p><strong>A complete guide to setting up the Docker environment, configuring LLM providers, and using SCP Scientific Skills</strong></p>
 </div>
 
@@ -643,3 +643,4 @@ git pull origin main
     <a href="https://scp.intern-ai.org.cn">SCP Platform</a>
   </p>
 </div>
+
