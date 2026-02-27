@@ -48,7 +48,7 @@ SCP (Science Context Protocol) is an **open-source standard protocol** designed 
   - [What Are Scientific Skills?](#what-are-scientific-skills)
   - [Skill Catalog by Domain](#skill-catalog-by-domain)
   - [Skill Highlights](#skill-highlights)
-  - [How to use SCP skills](#skill-how-to-use-SCP-skills)
+  - [How to use SCP skills](#skill-how-to-use-scp-skills)
 - [📊 Use Cases](#-use-cases)
 - [🔬 SCP vs MCP](#-scp-vs-mcp)
 - [🌐 Resources](#-resources)
