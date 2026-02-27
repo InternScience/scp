@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="images/overview.png" alt="SCP Logo" width="120">
+  <img src="images/overview.png" alt="SCP Logo" width="900">
   <h1>SCP: Science Context Protocol</h1>
   <p><strong>Science Context Protocol — Building a Global Collaboration Network for Autonomous Scientific Agents</strong></p>
 
@@ -16,12 +16,14 @@
     <a href="https://github.com/InternScience/scp">
       <img src="https://img.shields.io/badge/⭐%20GitHub-000000?style=for-the-badge&logo=github" alt="GitHub">
     </a>
+    <a href="https://github.com/InternScience/scp/tree/main/skills">
+      <img src="https://img.shields.io/badge/Skills-206-orange" alt="Skills">
+    </a>
   </p>
 
   <p>
     <img src="https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white" alt="Python">
     <img src="https://img.shields.io/badge/License-Apache%202.0-green" alt="License">
-    <img src="https://img.shields.io/badge/Skills-206-orange" alt="Skills">
   </p>
 </div>
 
