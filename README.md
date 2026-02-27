@@ -244,7 +244,7 @@ All **206 skills** are organized into **8 major scientific domains**:
 - ✅ **All skills** have been **tested against live SCP endpoints** and verified to work
 - 🔧 **250+ distinct tools** orchestrated across **31 SCP Servers**
 - 🌍 Covering **8 major scientific domains** and **112+ sub-disciplines**
-- 🔑 Each skill includes authentication setup — just replace `<YOUR_SCP_HUB_API_KEY>` with your own key from the [SCP Square](https://scphub.intern-ai.org.cn/)
+- 🔑 Each skill includes authentication setup — just replace `<YOUR_SCP_HUB_API_KEY>` with your own key applied and generated in each SCP server page listed in [SCP Square](https://scphub.intern-ai.org.cn/)
 
 ### How to use SCP skills
 
