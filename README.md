@@ -246,6 +246,8 @@ All **206 skills** are organized into **8 major scientific domains**:
 - 🌍 Covering **8 major scientific domains** and **112+ sub-disciplines**
 - 🔑 Each skill includes authentication setup — just replace `<YOUR_SCP_HUB_API_KEY>` with your own key applied and generated in each SCP server page listed in [SCP Square](https://scphub.intern-ai.org.cn/)
 
+> 💡 **Want more?** If you'd like any useful models or tools to be available as 24/7 accessible APIs, just let us know by [submitting an issue](https://github.com/InternScience/scp/issues), and we'll deploy them for you.
+
 ### How to use SCP skills
 
 Please refer to the [**SCP Skills Tutorial**](https://github.com/InternScience/scp/blob/main/tutorial%20for%20skills.md).
