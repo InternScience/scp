@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="images/scp_logo.png" alt="SCP Logo" width="120">
+  <img src="images/overview.png" alt="SCP Logo" width="120">
   <h1>SCP: Science Context Protocol</h1>
   <p><strong>Science Context Protocol — Building a Global Collaboration Network for Autonomous Scientific Agents</strong></p>
 
