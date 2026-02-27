@@ -1,217 +1,165 @@
-# Scientific Intelligence Context Protocol (SCP) 
-*科学智能上下文协议* [[中文版]](https://github.com/open-sciencelab/scp/blob/main/README_CN.md)
+<div align="center">
+  <h1>SCP: Science Context Protocol</h1>
+</div>
+
+> **An open protocol layer for connecting and orchestrating heterogeneous scientific resources, building a global collaborative web of autonomous scientific Agents**
+
+<div align="center">
+
+[![Official Site](https://img.shields.io/badge/Official%20Site-333399.svg?logo=homepage)](https://discovery.intern-ai.org.cn/org/ailab/workspace/iframe?url=https://scphub.intern-ai.org.cn/)&#160;
+<a href="https://arxiv.org/abs/2512.24189" target="_blank"><img src="https://img.shields.io/badge/arXiv-b5212f.svg?logo=arxiv" height="21px"></a>
+[![Tool List](https://img.shields.io/badge/tools-1600%2B-brightgreen)](https://yankai96.github.io/SCP_Tool_List/)&#160;
+[![GitHub](https://img.shields.io/badge/GitHub-000000?logo=github&logoColor=white)](https://github.com/InternScience/scp)&#160;
+</div>
+
+---
 
 ## 📖 Table of Contents
-- [Introduction](#introduction)
-- [Why SCP](#why-scp)
-- [Protocol Scope & Focus](#protocol-scope--focus)
-- [Key Advantages](#key-advantages)
-- [Key Applications](#key-applications)
-- [Framework Design](#framework-design)
-- [Core Components](#core-components)
-- [Installation](#installation)
-- [Quick Start](#quick-start)
-- [Examples](#examples)
 
-## 📄 Introduction
+- [📖 Table of Contents](#-table-of-contents)
+- [Overview](#overview)
+- [✨ Key Features](#-key-features)
+- [🏗️ Architecture Overview](#️-architecture-overview)
+- [🚀 Getting Started](#-getting-started)
+  - [Installation and Deployment](#installation-and-deployment)
+- [🛠️ Tool Ecosystem](#️-tool-ecosystem)
+- [📊 Use Cases](#-use-cases)
+- [🔬 SCP vs MCP](#-scp-vs-mcp)
+- [🌐 Related Links](#-related-links)
+- [📄 License](#-license)
+- [Acknowledgments](#acknowledgments)
 
-The Scientific Intelligence Context Protocol (SCP) is an open-source standard independently developed by Shanghai AI Laboratory and specifically designed to accelerate scientific discovery. By establishing a standardized connectivity framework, it enables efficient interaction between discovery-oriented applications and external research assets—such as laboratory instruments, databases, knowledge repositories, large language models (LLMs), specialized computational models, tools, and APIs. Inspired by the universality and ease of use of the Model Context Protocol (MCP), SCP provides a consistent yet flexible interface for integrating wet-lab equipment, data stores, knowledge bases, LLMs, domain-specific simulation models, and other research components. In doing so, SCP aims to foster a hybrid dry-wet, multi-institution collaborative research paradigm and serve as a novel support platform to enable the collaborative evolution of researchers, research tools, and research subjects in a new era of multi-agent-driven scientific investigation and discovery.
+---
 
-### Key Capabilities
+## Overview
 
-1. **Breaking Data & Capability Silos**
-   - Unified interface and federated SCP Servers
-   - Seamless sharing of datasets, models, agents, and lab equipment
-   - Trivially composable dry-wet hybrid experiments across institutions
+SCP (Science Context Protocol) is an **open-source standard protocol** designed to accelerate scientific discovery by building a **global web of autonomous scientific agents** that connects heterogeneous resources such as software tools, models, datasets, workflow engines, and experimental instruments.
 
-2. **End-to-End, One-Stop Scientific Workflows**
-   - Uniform identifiers for data, results, and process memories
-   - Chain intermediate outputs and results across experimental phases
-   - Ensure full reproducibility and traceability
+<p align="center">
+  <img src="images/overview.png" alt="SCP overview" width="850">
+</p>
 
-3. **Secured, Multi-Discipline Collaboration**
-   - Per-experiment access control policies enforced by SCP Hub
-   - Scoped permissions and priority levels for researchers, data objects, models, and resources
-   - Safeguard confidentiality and ensure fair resource allocation
+SCP provides:
 
-## 🔍 Why SCP
+- **Protocol-level connectivity**: Unified description and invocation of **1,600+** scientific resources (tools, models, instruments, etc.)
+- **Discovery-as-a-service**: Manages the entire experiment lifecycle through a centralized SCP Hub and distributed SCP Servers
 
-Current Model Context Protocols (MCP) and Agent-to-Agent (A2A) interaction standards face three core challenges in multi-disciplinary, hybrid scientific experiments:
+> Developed by **Shanghai Artificial Intelligence Laboratory**, SCP aims to promote cross-institution, cross-platform scientific intelligence collaboration.
 
-1. **Data-Agent Silos**
-   - Poor interoperability between experimental datasets, AI models, and wet-lab devices
+---
 
-2. **Workflow Fragmentation**
-   - Lack of unified context/memory between experimental stages
-   - Results in repeated setup overhead and errors
+## ✨ Key Features
 
-3. **Limited Security & Control**
-   - Difficulty enforcing fine-grained permissions in multi-disciplinary collaborations
+| Feature | Description |
+|---------|-------------|
+| **Unified Protocol Layer** | JSON-based standardized interface for unified invocation of tools, models, and instruments |
+| **Intelligent Orchestration** | SCP Hub supports automated planning, execution, and monitoring of multi-step workflows |
+| **Dry-Wet Experiment Integration** | Seamless integration of computational tools and experimental devices |
+| **Multi-Agent Collaboration** | Supports multiple AI agents working collaboratively in a unified context |
+| **Full Experiment Lifecycle Management** | End-to-end traceability from registration, planning, execution to archiving |
+| **Security and Access Control** | Fine-grained authentication and authorization mechanisms based on experiments |
 
-## 🚀 Protocol Scope & Focus
+---
 
-- **Standardized Connectivity**: Providing uniform interfaces for interactions among research instruments, tools, models, and data within scientific workflows, substantially reducing the complexity of custom integrations and thereby greatly improving research efficiency.
-- **Context Awareness**: Through its standardized design, the protocol enables discovery applications to better understand and leverage contextual information (data, models, agents, experimental tools, and equipment), facilitating the development of more intelligent and adaptive AI solutions.
-- **Dry-Wet Integration**: Supporting seamless connection with wet-lab apparatus to automate the end-to-end process from theoretical hypothesis to experimental validation, accelerating the pace of scientific investigation.
-- **Multi-Agent Collaboration**: Promoting coordinated operation among diverse agents (e.g., LLMs, automated instrumentation, computational models), fostering a highly efficient, collaborative research ecosystem.
-- **Data Services**: "Data as a Service" for processing and constructing AI-ready datasets, enabling frictionless linkage between datasets, models, intelligent agents, and laboratory equipment.
+## 🏗️ Architecture Overview
 
-## 🎯 Key Advantages
+<p align="center">
+  <img src="images/architecture.png" alt="SCP Architecture Overview" width="850">
+</p>
 
-1. **Universal Interoperability**
-   - One protocol fits all scientific instruments, data stores, and AI agents
-   - No need for bespoke adapters per device or model
-   - Simplified integration across diverse research components
+SCP adopts a **Hub-Spoke architecture**:
 
-2. **Flexible, Context-Aware Development**
-   - Full freedom for application developers to innovate
-   - Automatic end-to-end contextual metadata benefits
-   - Adaptive orchestration capabilities
-
-3. **Open, Community-Driven Evolution**
-   - Released under an open-source license
-   - Welcomes worldwide contributions and extensions
-   - Addresses emerging experimental needs
-
-4. **Robust Security & Compliance**
-   - Built-in authentication and authorization
-   - Comprehensive audit trails
-   - Trustworthy foundation for high-stakes research
-
-## 🚩 Key Applications
-
-### Protein Engineering
-Via SCP, researchers can interface with protein synthesis platforms, purification systems, and functional‐analysis instruments to automate the entire workflow—from in silico design through experimental validation. SCP enables seamless integration of computational models with wet-lab apparatus, accelerating protein optimization and downstream application development.
-
-### Materials Synthesis
-SCP facilitates interaction with materials fabrication equipment and performance-testing devices, streamlining the R&D pipeline and speeding up the discovery and deployment of novel materials.
-
-## 🎉 Framework Design
-<div align="center">
-<img width="98%" alt="SCP Protocol Architecture" src="docs/scp-architecture.png">
-</div>
-
-### SCP Protocol Architecture
-On top of standard MCP, SCP introduces four extensions tailored to scientific workflows:
-1. **Rich Experiment Metadata**
-  - Defines parameters such as experimenter_id, experiment_id, a brief objective, and URIs for data storage, result archives, and process memory logs.
-   ```python
-   class BaseParams(TypedDict):
-       UUID: str
-       user_id: str
-       organization_id: str
-       experiment_type: Literal["dry", "wet", "hybrid"]
-       experiment_name: str
-       priority: Literal["high", "med", "low"]
-   ```
-
-2. **Centralized SCP Hub**
-  - A registry for all experimental services (data stores, compute models, wet-lab devices).
-  - Handles service discovery, lifecycle management, experiment memory versioning, and OAuth 2.1-based authentication.
-
-3. **Intelligent Orchestration**
-  - Introduces an “Experiment Flow API” layered atop the Agent API.
-  - Enables automated composition of AI-driven workflows—recommending optimal protocols, resource allocations, and next-step actions.
-
-4. **Wet-Lab Integration**
-  - Standardized device drivers
-  - Vendor-agnostic interfaces
-  - Composable workflow services
-
-## 🔥 Core Components
-
-### 1. SCP Server
-
-**Key Functions:**
-- Access control management: The SCP server manages permissions for itself and its internal tools, supporting dynamic updates to access rights.
-- Automatic registration system: The SCP edge server automatically registers with the central server, streamlining external user access.
-- Device and tool management: The SCP edge server oversees existing devices and tools, making them readily available for external invocation.
-- Task execution and monitoring: Upon receiving instructions from the SCP central server, the SCP edge server executes operations on connected devices, tools, and models, with intermediate and final results returned in real time.
-- Real-time health checks: Regularly assesses the health status of edge devices, tools, and models, reporting back to the SCP edge server to guide internal scheduling and decision-making.
-
-**API Examples:**
-```python
-@device_action("protein_fold")
-async def protein_fold(self, params: DeviceParams) -> ActionResult:
-    """Execute protein folding simulation."""
-    pass
-```
-
-### 2. SCP Hub
-
-**Key Functions:**
-- Task distribution and tracking: Processes external instructions; the SCP central server determines the execution logic, invokes the appropriate edge server, and streams intermediate and final results back in real time.
-- Edge server health monitoring: Periodically monitors the status of deployed edge services and reports back to the SCP edge server to inform internal scheduling decisions.
-- Intent recognition and parsing: Parses user inputs to identify and decompose intent, executes the next steps for experimental tasks, or returns user-friendly guidance for unsupported requests.
-- Workflow orchestration: Evaluates recognized tasks against user permissions and available resources, returns the top three execution plans, and upon user selection, carries out the chosen workflow.
-
-### 3. SCP Client
-
-**Key Functions:**
-- Tool discovery and inventory: Based on user permissions, compile and present the list of all available SCP edge-side tools to the user.
-- User-friendly invocation interface: Enable users to perform end-to-end task orchestration as well as invoke individual tools.
-- Permission-based access control: Access to resources is granted based on explicit permissions assigned to users, roles, or groups.
-
-### 4. Message Queue
-
-**Key Functions:**
-- Device–Hub Decoupling: Enables full decoupling between edge devices and the central hub, allowing dynamic scaling of device-side hardware resources as required.
-- Messaging: Facilitates reliable message passing and status monitoring between edge devices and the hub.
-
-### 5. RADIS Server
-
-**Key Functions**
-- Result Caching: Caches each intermediate and final result by UUID to reduce overall system invocation overhead.
-- Temporary Result Caching: Stores provisional results to minimize internal communication latency.
-
-### 6. Object Storage
-
-**Key Functions**
-- Parameter Sharing: Enables data exchange between the central server and edge servers for large data objects that cannot be conveniently passed via function parameters.
-- Other Data Sharing: Supports additional data‐sharing mechanisms as required.
+    SCP Client (User/Application)
+    ↓
+    SCP Hub (Central Orchestrator)
+    ↓
+    SCP Server (Edge Node) → Tools/Models/Instruments
 
 
-## 🛠️ Installation
+- **SCP Hub**: Central orchestrator responsible for intent parsing, workflow generation, task scheduling, and permission management
+- **SCP Server**: Edge nodes that interface with local resources (instruments, databases, models, etc.)
+- **SCP Client**: User-facing interface for human researchers or AI scientists
 
-> Before installing scp, make sure your machine meets the following minimum system requirements:
->
-> - CPU >= 2 Core
-> - RAM >= 4 GiB
+---
 
-</br>
+## 🚀 Getting Started
 
-The easiest way to start the middleware is through [Docker Compose](docker/docker-compose.middleware.yaml). Before running middleware with the following commands, make sure that [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/) are installed on your machine:
-
+### Installation and Deployment
 
 ```bash
-# start middleware
+# Clone the repository
+git clone https://github.com/InternScience/scp.git
 cd scp
-cd docker
-mv docker-compose.middleware.yaml  docker-compose.yaml
-docker compose up -d
 
-# Install from source
-git clone https://github.com/shanghai-ai-lab/scp.git
-cd scp
-pip install .
+# install 
+pip install mcp
+
+# How to use
+
+There are two ways to use SCP in your workflow:
+
+## Option 1: Build & Manage Your Own
+You can set up your own SCP Server and Hub using the provided code. This gives you full control over your deployment and management.
+
+## Option 2: Use Intern-Discovery Platform (Recommended)
+Visit the **[SCP Square](https://discovery.intern-ai.org.cn/org/ailab/workspace/iframe?url=https://scphub.intern-ai.org.cn/)** on our **[Intern-Discovery platform](https://discovery.intern-ai.org.cn/org/ailab/workspace/chat)**. We host a ready-to-use SCP Hub with a public registration interface. You can submit your own SCP Server to the square, and it will be integrated into the managed Hub, making it discoverable and accessible across the Intern-Discovery ecosystem.
+
+Choose the approach that best fits your needs—whether you prefer full independence or a collaborative, managed environment.
 ```
 
 
-## 🧪 Examples
+## 🛠️ Tool Ecosystem
 
-See the [`examples/`](./examples/) directory for complete working examples
+SCP has integrated **1,600+ tools**, covering:
 
-## 🖊️ LLM Tool Invocation
-<div align="center">
-<img width="98%" alt="SCP TOOL CALL" src="docs/tool-call1.png">
-</div>
+- **Biology and Related Technologies** (45.9%)
+- **Physics** (21.1%)
+- **Chemistry** (11.6%)
+- **Mechanics and Materials Science** (8.7%)
+- **Mathematics** (8.0%)
+- **Information Science and Computing Technology** (4.6%)
 
-## Acknowledgement
-The [Model Context Protocol](https://github.com/modelcontextprotocol) provided us with significant inspiration!
+🔗 **[View Complete Tool List](https://yankai96.github.io/SCP_Tool_List/)**
 
-Note: To ensure compatibility with the MCP service, some of its code has been reused.
+## 📊 Use Cases
 
+| Use Case | Description |
+|----------|-------------|
+| Automated Experimental Protocol Design | Generate executable experimental protocols from natural language objectives |
+| Automated Reproduction from PDF Protocols | Extract experimental steps from PDFs and execute them automatically |
+| AI-Driven Molecular Screening | Integrate QED scoring, ADMET prediction, and molecular docking |
+| Dry-Wet Integrated Protein Engineering | Closed-loop workflow from sequence design to experimental validation |
 
-## 🎫 License
+For detailed case descriptions, refer to the [Technical Report](https://arxiv.org/abs/2512.24189) or [User Cases](https://github.com/InternScience/scp/tree/main/UserCases).
 
-This project is licensed under the MIT License - see the [LICENSE] file for details.
+## 🔬 SCP vs MCP
+
+| Feature | MCP | SCP |
+|---------|-----|-----|
+| Protocol Standardization | General tool invocation | Structured full scientific experiment workflow |
+| High-Throughput Experiment Support | No built-in experiment management | Supports batch experiments with context management |
+| Multi-Agent Collaboration | Point-to-point communication | Centralized orchestration and task distribution |
+| Wet-Lab Equipment Integration | Requires custom adapters | Standardized device drivers and interfaces |
+
+## 🌐 Related Links
+
+- **SCP Tool Plaza**: [Explore 1,600+ integrated tools](https://yankai96.github.io/SCP_Tool_List/)
+- **Chinese SCP Documentation**: [Detailed usage guide](https://github.com/InternScience/scp/blob/main/SCP%E4%B8%AD%E6%96%87%E6%89%8B%E5%86%8C.md)
+- **Paper & Technical Report**: [SCP design and experimental details]()
+- **Community Discussions**: [Questions and discussions](https://www.shlab.org.cn/news/5444176)
+
+## 📄 License
+This project is open source under the Apache License 2.0.
+
+## Acknowledgments
+SCP is developed by Shanghai Artificial Intelligence Laboratory with support from the open-source community.
+
+If you use SCP, please cite our technical report:
+```bibtex
+@article{jiang2025scp,
+  title={SCP: Accelerating Discovery with a Global Web of Autonomous Scientific Agents},
+  author={Jiang, Yankai and Lou, Wenjie and Wang, Lilong and Tang, Zhenyu and Feng, Shiyang and Lu, Jiaxuan and Sun, Haoran and Pan, Yaning and Gu, Shuang and Su, Haoyang and others},
+  journal={arXiv preprint arXiv:2512.24189},
+  year={2025}
+}
+```
