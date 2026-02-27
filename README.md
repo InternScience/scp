@@ -240,7 +240,7 @@ All **206 skills** are organized into **8 major scientific domains**:
 ### Skill Highlights
 
 - 📦 **206 Skills** in total, each containing a complete `SKILL.md` with documentation, test cases, and runnable Python code
-- ✅ **130 skills** have been **tested against live SCP endpoints** and verified to work
+- ✅ **All skills** have been **tested against live SCP endpoints** and verified to work
 - 🔧 **250+ distinct tools** orchestrated across **31 SCP Servers**
 - 🌍 Covering **8 major scientific domains** and **112+ sub-disciplines**
 - 🔑 Each skill includes authentication setup — just replace `<YOUR_SCP_HUB_API_KEY>` with your own key from the [SCP Platform](https://scp.intern-ai.org.cn)
