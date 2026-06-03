@@ -1,14 +1,14 @@
 ---
 name: sciverse-academic-retrieval
-description: Citation-grade academic literature retrieval (search, semantic chunks, byte-range read, figure fetch) over SciVerse, an open scientific platform indexing peer-reviewed and preprint papers.
+description: Citation-grade academic literature retrieval (search, semantic chunks, byte-range read, figure fetch) over Sciverse, an open scientific platform indexing peer-reviewed and preprint papers.
 license: Apache-2.0
 metadata:
     skill-author: OpenDataLab
 ---
 
-# SciVerse Academic Retrieval
+# Sciverse Academic Retrieval
 
-Connects to the **SciVerse** SCP Server via the SCP Hub MCP gateway to perform
+Connects to the **Sciverse** SCP Server via the SCP Hub MCP gateway to perform
 **citation-grade scientific literature retrieval** over a corpus that includes
 peer-reviewed papers (Nature, Cell, …), preprints (arXiv, bioRxiv, …) and other
 academic sources.
@@ -29,9 +29,9 @@ from mcp import ClientSession
 
 
 class SciverseClient:
-    """SciVerse SCP Server client (5 academic-retrieval tools).
+    """Sciverse SCP Server client (5 academic-retrieval tools).
 
-    All requests transparently proxied by the SCP Hub to the SciVerse backend.
+    All requests transparently proxied by the SCP Hub to the Sciverse backend.
     Authentication uses the SCP-HUB-API-KEY header (your SCP Platform key).
     """
 
